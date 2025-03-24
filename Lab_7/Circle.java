@@ -1,43 +1,40 @@
+//Lab 7 documentation instructed to use the included Circle.java file, so nothing in this file is original.
 public class Circle {
-	
-	//***CLASS PROPERTIES***
-	private double radius = 1.0;
-	private String color = "red";
-	
-	//***CLASS BEHAVIOURS***
-	public Circle() {
-	}
-	
-	public Circle(double radius) {
-		this.radius = radius;
-	}
-	
-	public Circle(double radius, String color) {
-		this.radius = radius;
-		this.color = color;
-	}
-	
-	public double getRadius() {
-		return this.radius;
-	}
-	
-	public void setRadius(double radius) {
-		this.radius = radius;
-	}
-	
-	public String getColor() {
-		return this.color;
-	}
-	
-	public void setColor(String color) {
-		this.color = color;
-	}
-	
-	public double getArea() {
-		return radius * radius * 3.14159; //used pi approximation since high accuracy wasn't required according to lab documentation
-	}
-	
-	public String toString() {
-		return "Circle Properties: [  Color: " + this.color + ", Radius: " + this.radius + ", Area: " + this.getArea +"]";
-	}
+   // private instance variables
+   private double radius;
+   private String color;
+   // Constructors
+   public Circle() {
+      this.radius = 1.0;
+      this.color = "red";
+   }
+   public Circle(double radius) {
+      this.radius = radius;
+      this.color = "red";
+   }
+   public Circle(double radius, String color) {
+      this.radius = radius;
+      this.color = color;
+   }
+   // Getters and Setters
+   public double getRadius() {
+      return this.radius;
+   }
+   public String getColor() {
+      return this.color;
+   }
+   public void setRadius(double radius) {
+      this.radius = radius;
+   }
+   public void setColor(String color) {
+      this.color = color;
+   }
+   // Describle itself
+   public String toString() {
+      return "radius=" + radius + " ,color=" + color ;
+   }
+   // Return the area of this Circle
+   public double getArea() {
+      return radius * radius * Math.PI;
+   }
 }
