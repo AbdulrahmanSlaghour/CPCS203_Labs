@@ -8,7 +8,7 @@ public class ShoppingCart {
         
         do {
             cart.add(addItem(input));
-        } while (continueShopping());
+        } while (continueShopping(input));
         
         printCart(cart);
         
@@ -44,7 +44,7 @@ public class ShoppingCart {
         System.out.print("Enter the quantity: ");
         int quantity = Integer.parseInt(input.nextLine());
         
-        return Items(itemName, unitPrice, quantity);
+        return new Items(itemName, unitPrice, quantity);
     }
     
     public static void printCart(ArrayList<Items> cart) {
