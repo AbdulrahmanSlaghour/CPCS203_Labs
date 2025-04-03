@@ -52,11 +52,11 @@ public class ShoppingCart {
         
         System.out.println("\nFinal Shopping Cart Totals");
         System.out.println("-------------------------------------------------");
-        System.out.printf("%-20s %-20s %-20s %-20s", "ItemName", "Unit Price", "Quantity", "Price * Quantity");
+        System.out.printf("%-20s %-20s %-20s %-20s\n", "ItemName", "Unit Price", "Quantity", "Price * Quantity");
         
         for (Items item : cart) {
             double unitTotal = item.getUnitPrice() * item.getQuantity();
-            System.out.printf("%-20s %-20.1f %-20d %-20.1f", item.getItemName(), item.getUnitPrice(), item.getQuantity(), unitTotal);
+            System.out.printf("%-20s %-20.1f %-20d %-20.1f\n", item.getItemName(), item.getUnitPrice(), item.getQuantity(), unitTotal);
             
             cartTotal += unitTotal;
         }
