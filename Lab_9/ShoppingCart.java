@@ -51,8 +51,8 @@ public class ShoppingCart {
         double cartTotal = 0;
         
         System.out.println("\nFinal Shopping Cart Totals");
-        System.out.println("-------------------------------------------------");
-        System.out.printf("%-20s %-20s %-20s %-20s\n", "ItemName", "Unit Price", "Quantity", "Price * Quantity");
+        System.out.println("--------------------------------------------------------------------------------");
+        System.out.printf("%-20s %-20s %-20s %-20s\n", "Item Name", "Unit Price", "Quantity", "Price * Quantity");
         
         for (Items item : cart) {
             double unitTotal = item.getUnitPrice() * item.getQuantity();
