@@ -19,7 +19,7 @@ public class Items {
     //***METHODS***
     
     public String getItemName() {
-        return getItemName;
+        return this.itemName;
     }
     
     public void setItemName(String itemName) {
